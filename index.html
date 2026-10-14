@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart School</title>
+    <meta name="description" content="A modern, simple school website landing page." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="brand">
+          <span class="brand-mark">S</span>
+          <span>Smart School</span>
+        </div>
+
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav-menu">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#programs">Programs</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <p class="eyebrow">Learn. Grow. Lead.</p>
+            <h1>Building bright futures through smart education.</h1>
+            <p class="subtitle">
+              We create a safe, inspiring, and technology-focused learning environment for
+              students to thrive academically and personally.
+            </p>
+            <div class="hero-actions">
+              <a href="#programs" class="btn btn-primary">Explore Programs</a>
+              <a href="#contact" class="btn btn-secondary">Enroll Now</a>
+            </div>
+            <ul class="stats">
+              <li><strong>500+</strong><span>Students</span></li>
+              <li><strong>25+</strong><span>Teachers</span></li>
+              <li><strong>12</strong><span>Programs</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-card">
+            <div class="card-top">
+              <span class="tag">Featured</span>
+              <span class="rating">★ 4.9</span>
+            </div>
+            <h2>School Highlights</h2>
+            <div class="mini-list">
+              <div>
+                <span class="dot blue"></span>
+                STEM Labs
+              </div>
+              <div>
+                <span class="dot green"></span>
+                Creative Arts
+              </div>
+              <div>
+                <span class="dot orange"></span>
+                Sports & Wellness
+              </div>
+            </div>
+            <div class="progress-panel">
+              <div class="progress-label">
+                <span>Student Success</span>
+                <strong>92%</strong>
+              </div>
+              <div class="progress-bar">
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container two-column">
+          <div>
+            <p class="section-tag">Our Mission</p>
+            <h2>Helping every student discover their potential.</h2>
+          </div>
+          <p>
+            Smart School is a vibrant learning community where curiosity, creativity, and
+            confidence are nurtured every day. From early learning to middle school,
+            students are encouraged to explore, collaborate, and achieve their goals.
+          </p>
+        </div>
+      </section>
+
+      <section id="programs" class="section alt-bg">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-tag">Programs</p>
+            <h2>Learning experiences designed for success.</h2>
+          </div>
+
+          <div class="card-grid">
+            <article class="info-card">
+              <div class="icon">📘</div>
+              <h3>Academic Excellence</h3>
+              <p>Strong foundations in literacy, mathematics, science, and technology.</p>
+            </article>
+            <article class="info-card">
+              <div class="icon">🎨</div>
+              <h3>Creative Learning</h3>
+              <p>Arts, design, and expression that inspire imagination and confidence.</p>
+            </article>
+            <article class="info-card">
+              <div class="icon">⚽</div>
+              <h3>Sports & Wellness</h3>
+              <p>Physical activity and healthy routines that support growth and teamwork.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container schedule-wrap">
+          <div class="section-heading left">
+            <p class="section-tag">Daily Schedule</p>
+            <h2>A balanced day for learning and growth.</h2>
+          </div>
+
+          <div class="schedule">
+            <div class="schedule-item"><span>8:30</span><strong>Arrival & Morning Circle</strong></div>
+            <div class="schedule-item"><span>9:00</span><strong>Core Classes</strong></div>
+            <div class="schedule-item"><span>11:00</span><strong>Break & Activity</strong></div>
+            <div class="schedule-item"><span>12:00</span><strong>Lunch</strong></div>
+            <div class="schedule-item"><span>1:00</span><strong>Project-Based Learning</strong></div>
+            <div class="schedule-item"><span>2:30</span><strong>Club / Sports</strong></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container contact-box">
+          <div class="contact-copy">
+            <p class="section-tag">Contact Us</p>
+            <h2>Ready to join our school community?</h2>
+            <p>
+              We are here to answer questions about admissions, programs, and school life.
+            </p>
+          </div>
+
+          <form id="contactForm" class="contact-form">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="Your email" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4" placeholder="Tell us how we can help" required></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary full">Send Message</button>
+            <p id="formStatus" class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>© <span id="year"></span> Smart School</p>
+        <p>Inspiring students to learn, lead, and thrive.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
